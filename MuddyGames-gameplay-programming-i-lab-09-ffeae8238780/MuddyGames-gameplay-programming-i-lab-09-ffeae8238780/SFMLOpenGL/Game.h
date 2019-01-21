@@ -4,12 +4,12 @@
 #include <SFML/Window.hpp>
 #include <SFML/OpenGL.hpp>
 
-#include <Vector3.h>
-#include <Matrix3.h>
+#include <MyVector3.h>
+#include <MyMatrix3.h>
 
 using namespace std;
 using namespace sf;
-using namespace gpp;
+//using namespace gpp;
 
 class Game
 {
@@ -24,7 +24,7 @@ private:
 	void update();
 	void render();
 	void unload();
-
+	void matrixApplicationFunction(MyMatrix3 t_matrix);
 	Clock clock;
 	Time elapsed;
 
